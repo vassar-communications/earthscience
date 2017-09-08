@@ -1,0 +1,111 @@
+@import "_imports";
+
+.u-VCard--site {
+    z-index: 10;
+    position: relative;
+}
+.u-pageHome .Module--contact {
+    display: none;
+}
+.museum {
+    padding: 5% 0;
+    overflow: hidden;
+    .u-Figure {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .u-Figure__image {
+        float: left;
+        width: 25%;
+        img {
+            width: 100%;
+        }
+    }
+    .figcaption {
+        float: left;
+        font-size: 100%;
+        font-family: $serif;
+        font-style: italic;
+        padding: 5%;
+        letter-spacing: .07em;
+        width: 75%;
+        text-align: left;
+    }
+}
+@media screen {
+    .u-pageHome { 
+        .u-lContent {
+            padding-top: 0;
+        }
+        .u-Figure--third {
+            width: 33.33%;
+        }
+        .u-Figure--left {
+            margin: 0 0 1.5em;
+        }
+    }
+}
+@media all and (min-width: $small) {
+    .u-pageHome { 
+        .u-lMain {
+            padding: 0 0 3%;
+            margin-right: 3%;
+        }
+
+        .u-NavSite {
+            width: 25%
+        }
+        .u-lContent {
+            padding: 0;
+            padding-right: 0;
+            width: 100%;
+            float: none;
+        }
+    }
+    .u-lHeader {
+        padding: 7% 3%;
+    }
+    .u-Masthead {
+        display: inline-block;
+        position: relative;
+    }
+    .u-Masthead__vassar {
+        position: absolute;
+    }
+}
+@media all and (min-width: $medium) {
+    .u-lHeader {
+        padding: 0 3% 4%;
+    }
+    .u-Search {
+        top: 0;
+    }
+    .u-pageHome {
+        .u-lMain {
+            margin-right: 0;
+        }
+        .u-NavSite {
+            padding: 0 3% 3%;
+            width: 20%;
+        }
+    } 
+}
+
+@media all and (min-width: $large) {
+    .museum {
+        .figcaption {
+            font-size: 125%;
+        }
+    }
+    .u-pageHome {
+        .intro-graphs {
+            width: 50%;
+            padding-right: 2.5%;
+            float: left;
+        }
+        .u-lAside {
+            padding-left: 2.5%;
+            width: 50%;
+        }
+    }
+}

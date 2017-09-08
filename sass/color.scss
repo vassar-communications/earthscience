@@ -1,0 +1,103 @@
+@import "_imports";
+a,
+.Module__link,
+.u-lAside a {
+    text-decoration: none;
+    border-bottom: 1px solid $linkBorderColor;
+    padding-bottom: 0;
+}
+a:visited {
+    border-bottom: 1px solid $linkColorVisited;
+}
+a:hover,
+a:focus {
+    border-bottom: 1px solid $linkColorHoverFocus;
+}
+a:active {
+    border-bottom: 1px solid $linkColorActive;
+}
+.Module__headerLink:link,
+.u-pageHome .Module__link:link,
+.moreLink:link,
+.museum .figcaption a:link,
+a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url,
+a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url:link,
+.icon-close:link,
+.u-Search__button:link,
+.ac-NavAnchor--menu:link,
+.u-NavSite__item:link,
+.u-Masthead__siteName--link:link,
+.u-Masthead__vassar--link:link,
+.u-ArticleNavGroup__navButton:link,
+.u-ArticleListItem__link:link {
+    border-bottom: none;
+}
+html,
+.u-lHeader {
+    background: $dkBrown url("../images/css/geoback2.jpg") top left repeat-x;
+    background-attachment: fixed;
+}
+.u-lFooter {
+    position: relative;
+    .u-VCard--site a {
+        border-bottom: 1px solid $ltYellow;
+    }
+    .u-VCard--site a:visited {
+        border-bottom: 1px solid $ltYellow;
+    }
+    .u-VCard--site a:hover,
+    .u-VCard--site a:focus {
+        border-bottom: 1px solid $linkColorHoverFocus;
+    }
+    .u-VCard--site a:active {
+        border-bottom: 1px solid $fontColor;
+    }
+}
+.Module__headerLink {
+    @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
+}
+.u-pageHome { 
+    body {
+        background-color: transparent;
+    }
+    color: $body--backgroundColor;
+    .u-lMain a {
+        @include link-colors($ltYellow, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
+    }
+    .u-lMain {
+        background: #25170f url("../images/css/back_front_layer2a.png") bottom left no-repeat;
+        box-shadow: 0 44px 25px 15px #25170f;
+    }
+    .u-NavSite__item {
+        @include link-colors($body--backgroundColor, $linkColorHoverFocus, $linkColorActive, $body--backgroundColor, $linkColorHoverFocus);
+    }
+    a.Module__headerLink,
+    .u-Masthead__siteName--link {
+        @include link-colors($body--backgroundColor, $linkColorHoverFocus, $linkColorActive, $body--backgroundColor, $linkColorHoverFocus);
+    }
+    .Module--news {
+        border-bottom: 1px solid rgb(84, 62, 64);
+    }
+    .museum {
+        border-top: 1px solid rgb(106, 61, 32);
+    }
+}
+.u-Masthead__siteName--link {
+    @include link-colors($body--backgroundColor, $linkColorHoverFocus, $linkColorActive, $body--backgroundColor, $linkColorHoverFocus);
+}
+.u-VCard__item--contact {
+    @include link-colors($ltYellow, $linkColorHoverFocus, $linkColorActive, $ltYellow, $linkColorHoverFocus);
+}
+@media all and (min-width: $small) {
+    .u-Masthead__vassar--link {
+        @include link-colors($ltYellow, $linkColorHoverFocus, $linkColorActive, $ltYellow, $linkColorHoverFocus);
+        position: relative;
+    }
+    .u-NavSite__item {
+        @include link-colors($dkBlue, $linkColorHoverFocus, $linkColorActive, $dkBlue, $linkColorHoverFocus);
+    }
+    .u-NavSite__item--isCurrent,
+    .u-NavSite__item--isOpen .u-NavSite__item {
+        @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
+    }
+}
