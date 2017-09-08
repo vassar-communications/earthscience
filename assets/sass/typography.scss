@@ -31,6 +31,7 @@ h2 {
 }
 h3 {
 	font-size: 1.4em;
+	padding-top: 0;
 }
 h4 {
 	font-size: 1.31em;
@@ -80,6 +81,9 @@ p.intro-graph {
 }
 .u-biosInner .u-pageTitle {
     margin-bottom: 0;
+}
+.u-BioList__item {
+	margin-bottom: .5em;
 }
 .Module--sidebar .moreLink {
     font-weight: $fontWeightBold;
