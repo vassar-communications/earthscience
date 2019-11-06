@@ -82,6 +82,17 @@ html,
         border-top: 1px solid rgb(106, 61, 32);
     }
 }
+
+.gf-.u-pageInner body
+{
+    background-color: transparent;
+}
+
+.gf-.u-pageInner .PageContent
+{
+    background-color: #ecebdd;
+}
+
 .u-Masthead__siteName--link {
     @include link-colors($body--backgroundColor, $linkColorHoverFocus, $linkColorActive, $body--backgroundColor, $linkColorHoverFocus);
 }

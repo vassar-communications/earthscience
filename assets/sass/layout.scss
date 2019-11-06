@@ -44,6 +44,11 @@
             margin: 0 0 1.5em;
         }
     }
+    
+    .gf- .u-Masthead__siteName
+    {
+        margin-top: .5em;
+    }
 }
 @media all and (min-width: $small) {
     .u-pageHome { 
@@ -72,7 +77,13 @@
     .u-Masthead__vassar {
         position: absolute;
     }
+    
+    .gf- .u-Masthead__siteName
+    {
+        margin-top: 1em;
+    }
 }
+
 @media all and (min-width: $medium) {
     .u-lHeader {
         padding: 0 3% 4%;
@@ -88,8 +99,20 @@
             padding: 0 3% 3%;
             width: 20%;
         }
-    } 
+    }
+    
+    .gf- .PageContent
+    {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .gf- .u-lContent
+    {
+        padding-right: 5%;
+    }
 }
+    
 
 @media all and (min-width: $large) {
     .museum {
@@ -107,5 +130,14 @@
             padding-left: 2.5%;
             width: 50%;
         }
+    }    
+}
+
+@media all and (min-width: 76em)
+{
+    .gf- .PageContent
+    {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
